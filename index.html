@@ -106,7 +106,7 @@
 <main>
 
 <p class="meta">
-  <strong>Có hiệu lực từ:</strong> 25/09/2026<br>
+  <strong>Có hiệu lực từ:</strong> 29/09/2026<br>
   <strong>Nhà phát triển:</strong> N.C.D Smart App<br>
   <strong>Tên gói ứng dụng:</strong> com.ncdsmartapp.plantcare<br>
   <strong>Liên hệ:</strong> <a href="mailto:plantcare.vn.support@gmail.com">plantcare.vn.support@gmail.com</a>
@@ -132,9 +132,9 @@
       <td>Lấy dự báo thời tiết cho khu vực của bạn, phục vụ nhắc tưới nước và cảnh báo thời tiết bất lợi</td>
     </tr>
     <tr>
-      <td>Mã định danh ngẫu nhiên</td>
+      <td>Mã định danh thiết bị (đã băm một chiều)</td>
       <td>Có</td>
-      <td>Đếm số lượt sử dụng, giới hạn số lượt dùng miễn phí mỗi tháng, và xác nhận gói bạn đã mua</td>
+      <td>Đếm số lượt sử dụng, giới hạn số lượt dùng miễn phí mỗi tháng, chống lạm dụng lượt miễn phí, xác nhận gói bạn đã mua và lượt quà tặng bạn đã nhận</td>
     </tr>
     <tr>
       <td>Ảnh chụp cây</td>
@@ -179,14 +179,17 @@
 
 <h3>Về mã định danh</h3>
 <p>
-  Khi mở ứng dụng lần đầu, máy của bạn tự sinh ra một chuỗi ký tự ngẫu nhiên, ví dụ
-  <em>pc-m4k2p9x-7x3k9d2m1p4q</em>. Chuỗi này <strong>không lấy từ thiết bị</strong>, không phải mã quảng cáo
-  của Android, và không thể dùng để tìm ra bạn là ai. Chúng tôi dùng nó vào ba việc: phân biệt
+  Khi mở ứng dụng lần đầu, ứng dụng tạo một mã định danh bằng cách <strong>băm một chiều</strong>
+  mã Android ID của máy (mã Android cấp riêng cho từng ứng dụng trên từng máy) cùng một chuỗi cố định
+  của PlantCare, ví dụ <em>pc-a-3fh8k2qm9x1w7tz4r6pd</em>. Băm một chiều nghĩa là từ mã này không thể
+  tính ngược ra Android ID. Mã này không phải mã quảng cáo của Android, không chứa tên, email hay số
+  điện thoại, và không thể dùng để tìm ra bạn là ai. Chúng tôi dùng nó vào bốn việc: phân biệt
   "một người mở ứng dụng bảy lần" với "bảy người mở một lần"; đếm số lượt nhận diện và chuẩn đoán
-  miễn phí còn lại trong tháng; và gắn gói bạn đã mua với máy của bạn. Nếu bạn gỡ ứng dụng rồi cài lại,
-  một chuỗi hoàn toàn mới sẽ được sinh ra và chuỗi cũ không còn liên quan tới bạn nữa. Gói đã mua vẫn
-  lấy lại được bằng nút <strong>Khôi phục giao dịch</strong>, vì Google Play ghi nhận giao dịch theo
-  tài khoản Google của bạn.
+  còn lại trong tháng, kể cả lượt quà tặng; chống lạm dụng lượt dùng miễn phí; và gắn gói bạn đã mua
+  với máy của bạn. Mã này <strong>giữ nguyên khi bạn xoá dữ liệu ứng dụng hoặc gỡ rồi cài lại</strong>,
+  nên số lượt đã dùng trong tháng không bị đặt lại; mã chỉ đổi khi máy được khôi phục cài đặt gốc.
+  Gói đã mua vẫn lấy lại được trên máy mới bằng nút <strong>Khôi phục giao dịch</strong>, vì Google Play
+  ghi nhận giao dịch theo tài khoản Google của bạn.
 </p>
 
 <h3>Về ảnh</h3>
@@ -239,7 +242,7 @@
     </tr>
     <tr>
       <td>RevenueCat</td>
-      <td>Mã định danh ngẫu nhiên, lịch sử mua gói</td>
+      <td>Mã định danh thiết bị (đã băm), lịch sử mua gói</td>
       <td>Xác nhận gói bạn đã mua và thời hạn gói; không nhận thông tin thẻ</td>
     </tr>
     <tr>
@@ -293,9 +296,9 @@
   <li><strong>Gỡ ứng dụng:</strong> mọi dữ liệu trên máy biến mất cùng lúc.</li>
 </ul>
 <p>
-  Số liệu đếm ẩn danh gắn với chuỗi ngẫu nhiên đã nhắc ở mục 1 vẫn còn trên máy chủ sau khi bạn
-  gỡ ứng dụng, vì chúng tôi không có cách nào biết chuỗi nào là của bạn để xoá. Số liệu đó không
-  chứa thông tin nào nhận ra bạn được.
+  Số liệu đếm ẩn danh gắn với mã định danh đã nhắc ở mục 1 (số lượt đã dùng, lượt quà tặng đã nhận)
+  vẫn còn trên máy chủ sau khi bạn xoá dữ liệu hoặc gỡ ứng dụng, để lượt dùng miễn phí không bị đặt lại
+  bằng cách cài lại ứng dụng. Số liệu đó không chứa thông tin nào nhận ra bạn được.
 </p>
 
 <h2>6. Trẻ em</h2>
@@ -328,7 +331,7 @@
 
 <h1 style="font-size:22px;color:#085041;margin-bottom:6px">Privacy Policy</h1>
 <p class="meta">
-  <strong>Effective date:</strong> 25 September 2026<br>
+  <strong>Effective date:</strong> 29 September 2026<br>
   <strong>Developer:</strong> N.C.D Smart App<br>
   <strong>Package name:</strong> com.ncdsmartapp.plantcare<br>
   <strong>Contact:</strong> <a href="mailto:plantcare.vn.support@gmail.com">plantcare.vn.support@gmail.com</a>
@@ -348,7 +351,7 @@
   </thead>
   <tbody>
     <tr><td>Approximate location</td><td>Yes</td><td>Weather forecast used for watering reminders</td></tr>
-    <tr><td>Randomly generated user ID</td><td>Yes</td><td>Counting usage, limiting free monthly usage, and linking your purchased plan to your device</td></tr>
+    <tr><td>Device identifier (one-way hashed)</td><td>Yes</td><td>Counting usage, limiting free monthly usage, preventing abuse of free usage, and linking your purchased plan and gift credits to your device</td></tr>
     <tr><td>Plant photos</td><td>Processed ephemerally, not stored</td><td>Species identification and disease diagnosis</td></tr>
     <tr><td>Name, email, phone number</td><td>No</td><td>The app has no sign-up feature</td></tr>
     <tr><td>Contacts, messages, call logs</td><td>No</td><td>—</td></tr>
@@ -357,6 +360,16 @@
     <tr><td>Health information</td><td>No</td><td>—</td></tr>
   </tbody>
 </table>
+<p>
+  <strong>About the device identifier.</strong> On first launch the app creates an identifier by
+  one-way hashing your device's Android ID (an ID Android assigns separately to each app on each
+  device) together with a fixed PlantCare value, e.g. <em>pc-a-3fh8k2qm9x1w7tz4r6pd</em>. The Android
+  ID cannot be recovered from it. It is not the Android advertising ID and contains no name, email or
+  phone number. It stays the same if you clear the app's data or reinstall the app, so monthly usage
+  cannot be reset by reinstalling; it changes only after a factory reset. Purchased plans can be
+  restored on a new device with <strong>Restore purchases</strong>, because Google Play records them
+  against your Google account.
+</p>
 
 <h2>2. Data stored only on your device</h2>
 <p>
@@ -371,7 +384,7 @@
   <li><strong>OpenWeather</strong> — receives coordinates, returns a forecast</li>
   <li><strong>Supabase</strong> — our own backend; relays photos and stores anonymous counters</li>
   <li><strong>Anthropic</strong> — AI model that analyses plant photos</li>
-  <li><strong>RevenueCat</strong> — receives the random ID and purchase history to confirm your plan; never receives card details</li>
+  <li><strong>RevenueCat</strong> — receives the hashed device identifier and purchase history to confirm your plan; never receives card details</li>
   <li><strong>Google Play</strong> — processes all subscription payments</li>
 </ul>
 <p>We do not sell your data, do not share it with advertisers, and do not use it for ad targeting.</p>
@@ -386,8 +399,9 @@
 <p>
   You may delete all local data from within the app (Profile → Delete all data), export a backup
   file, revoke any permission in your phone settings, or uninstall the app. Anonymous counters tied
-  to the randomly generated ID remain on our servers because we have no way to identify which
-  records belong to you; they contain nothing that identifies you.
+  to the device identifier (usage counts and gift credits received) remain on our servers after you
+  clear data or uninstall, so free usage cannot be reset by reinstalling; they contain nothing that
+  identifies you.
 </p>
 
 <h2>6. Children</h2>
