@@ -106,7 +106,7 @@
 <main>
 
 <p class="meta">
-  <strong>Có hiệu lực từ:</strong> 29/09/2026<br>
+  <strong>Có hiệu lực từ:</strong> 04/10/2026<br>
   <strong>Nhà phát triển:</strong> N.C.D Smart App<br>
   <strong>Tên gói ứng dụng:</strong> com.ncdsmartapp.plantcare<br>
   <strong>Liên hệ:</strong> <a href="mailto:plantcare.vn.support@gmail.com">plantcare.vn.support@gmail.com</a>
@@ -139,7 +139,7 @@
     <tr>
       <td>Ảnh chụp cây</td>
       <td>Xử lý tức thời, không lưu</td>
-      <td>Nhận diện loài cây và chuẩn đoán bệnh</td>
+      <td>Nhận diện loài cây và chẩn đoán bệnh</td>
     </tr>
     <tr>
       <td>Họ tên, email, số điện thoại</td>
@@ -155,6 +155,16 @@
       <td>Lịch sử mua gói</td>
       <td>Có</td>
       <td>Xác nhận gói bạn đã mua và thời hạn của gói</td>
+    </tr>
+    <tr>
+      <td>Mã quảng cáo của thiết bị (Advertising ID)</td>
+      <td>Có — chỉ với gói Miễn phí, do Google AdMob thu thập</td>
+      <td>Hiển thị và đo lường quảng cáo, chống gian lận quảng cáo</td>
+    </tr>
+    <tr>
+      <td>Địa chỉ IP, tương tác với quảng cáo, thông tin chẩn đoán kỹ thuật của bộ quảng cáo</td>
+      <td>Có — chỉ với gói Miễn phí, do Google AdMob thu thập</td>
+      <td>Hiển thị và đo lường quảng cáo, ước tính khu vực gần đúng, chống gian lận</td>
     </tr>
     <tr>
       <td>Thông tin thẻ, tài khoản ngân hàng</td>
@@ -184,7 +194,7 @@
   của PlantCare, ví dụ <em>pc-a-3fh8k2qm9x1w7tz4r6pd</em>. Băm một chiều nghĩa là từ mã này không thể
   tính ngược ra Android ID. Mã này không phải mã quảng cáo của Android, không chứa tên, email hay số
   điện thoại, và không thể dùng để tìm ra bạn là ai. Chúng tôi dùng nó vào bốn việc: phân biệt
-  "một người mở ứng dụng bảy lần" với "bảy người mở một lần"; đếm số lượt nhận diện và chuẩn đoán
+  "một người mở ứng dụng bảy lần" với "bảy người mở một lần"; đếm số lượt nhận diện và chẩn đoán
   còn lại trong tháng, kể cả lượt quà tặng; chống lạm dụng lượt dùng miễn phí; và gắn gói bạn đã mua
   với máy của bạn. Mã này <strong>giữ nguyên khi bạn xoá dữ liệu ứng dụng hoặc gỡ rồi cài lại</strong>,
   nên số lượt đã dùng trong tháng không bị đặt lại; mã chỉ đổi khi máy được khôi phục cài đặt gốc.
@@ -194,7 +204,7 @@
 
 <h3>Về ảnh</h3>
 <p>
-  Khi bạn chụp ảnh để nhận diện cây hoặc chuẩn đoán bệnh, ảnh được thu nhỏ ngay trên máy rồi
+  Khi bạn chụp ảnh để nhận diện cây hoặc chẩn đoán bệnh, ảnh được thu nhỏ ngay trên máy rồi
   gửi qua máy chủ trung gian của chúng tôi tới mô hình trí tuệ nhân tạo để phân tích. Kết quả
   được trả về và <strong>ảnh bị bỏ đi ngay sau đó</strong>. Chúng tôi không có kho lưu ảnh và
   không giữ lại bản sao nào.
@@ -204,13 +214,25 @@
   trên bộ nhớ máy của bạn.
 </p>
 
+<h3>Về quảng cáo</h3>
+<p>
+  PlantCare hiển thị quảng cáo của <strong>Google AdMob</strong> cho người dùng <strong>gói Miễn phí</strong>
+  (dải quảng cáo nhỏ, quảng cáo toàn màn hình sau kết quả nhận diện, và quảng cáo bạn tự chọn xem để mở
+  một công cụ chuyên sâu). <strong>Gói Basic và Pro không có quảng cáo.</strong> Để hiển thị và đo lường
+  quảng cáo, bộ quảng cáo của Google có thể thu thập mã quảng cáo của thiết bị, địa chỉ IP (dùng để ước
+  tính khu vực gần đúng), tương tác với quảng cáo và thông tin chẩn đoán kỹ thuật. Dữ liệu này được mã
+  hoá khi truyền đi. Chúng tôi <strong>không</strong> gửi cho Google ảnh, danh sách cây, nhật ký chăm sóc
+  hay bất kỳ dữ liệu nào trong vườn của bạn. Cách Google sử dụng dữ liệu:
+  <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+</p>
+
 <h2>2. Dữ liệu nằm trên máy của bạn</h2>
 <p>Những thứ sau đây <strong>không bao giờ rời khỏi thiết bị</strong>:</p>
 <ul>
   <li>Danh sách cây trong vườn, tên bạn đặt, vị trí đặt cây trong nhà</li>
   <li>Lịch chăm sóc, lịch sử tưới nước, bón phân, tỉa cành, thay chậu</li>
   <li>Ảnh và ghi chú nhật ký của từng cây</li>
-  <li>Lịch sử chuẩn đoán bệnh và phác đồ điều trị</li>
+  <li>Lịch sử chẩn đoán bệnh và phác đồ điều trị</li>
   <li>Cài đặt cá nhân, tuỳ chọn thông báo</li>
 </ul>
 <p>
@@ -250,11 +272,17 @@
       <td>Thông tin thanh toán</td>
       <td>Xử lý mọi giao dịch mua gói; chúng tôi không nhìn thấy thẻ của bạn</td>
     </tr>
+    <tr>
+      <td>Google AdMob</td>
+      <td>Mã quảng cáo của thiết bị, địa chỉ IP, tương tác với quảng cáo (chỉ gói Miễn phí)</td>
+      <td>Hiển thị và đo lường quảng cáo cho gói Miễn phí</td>
+    </tr>
   </tbody>
 </table>
 <p>
-  Chúng tôi <strong>không bán</strong> dữ liệu của bạn, <strong>không chia sẻ</strong> cho công ty
-  quảng cáo, và <strong>không dùng</strong> dữ liệu của bạn để nhắm quảng cáo.
+  Chúng tôi <strong>không bán</strong> dữ liệu của bạn. Ngoài phần Google AdMob tự thu thập để hiển thị
+  quảng cáo cho gói Miễn phí như nêu ở mục 1, chúng tôi <strong>không chia sẻ</strong> dữ liệu của bạn
+  cho công ty quảng cáo nào khác.
 </p>
 
 <h2>4. Quyền ứng dụng xin và lý do</h2>
@@ -265,7 +293,7 @@
   <tbody>
     <tr>
       <td>Máy ảnh</td>
-      <td>Chụp cây để nhận diện và chuẩn đoán bệnh</td>
+      <td>Chụp cây để nhận diện và chẩn đoán bệnh</td>
       <td>Được — bạn vẫn chọn ảnh có sẵn</td>
     </tr>
     <tr>
@@ -283,6 +311,11 @@
       <td>Nhắc tưới nước, bón phân đúng ngày</td>
       <td>Được — chỉ mất lời nhắc</td>
     </tr>
+    <tr>
+      <td>Mã quảng cáo (AD_ID)</td>
+      <td>Cho Google AdMob đọc mã quảng cáo để hiển thị quảng cáo gói Miễn phí</td>
+      <td>Được — đặt lại hoặc xoá mã trong Cài đặt → Google → Quảng cáo</td>
+    </tr>
   </tbody>
 </table>
 
@@ -293,6 +326,8 @@
   <li><strong>Sao lưu:</strong> xuất toàn bộ vườn cây ra một tệp để tự giữ.</li>
   <li><strong>Rút quyền:</strong> tắt quyền vị trí hoặc thông báo bất cứ lúc nào trong phần
       Cài đặt của điện thoại.</li>
+  <li><strong>Mã quảng cáo:</strong> đặt lại hoặc xoá trong Cài đặt → Google → Quảng cáo của điện thoại.
+      Nâng cấp lên gói Basic hoặc Pro thì ứng dụng không hiển thị quảng cáo.</li>
   <li><strong>Gỡ ứng dụng:</strong> mọi dữ liệu trên máy biến mất cùng lúc.</li>
 </ul>
 <p>
@@ -316,8 +351,8 @@
 
 <h2>8. Thay đổi chính sách</h2>
 <p>
-  Khi bổ sung tính năng mới có ảnh hưởng tới dữ liệu — ví dụ đồng bộ nhiều thiết bị hoặc hiển thị
-  quảng cáo — chúng tôi sẽ cập nhật trang này và đổi ngày hiệu lực ở đầu trang trước khi tính năng
+  Khi bổ sung tính năng mới có ảnh hưởng tới dữ liệu — ví dụ đồng bộ nhiều thiết bị — chúng tôi
+  sẽ cập nhật trang này và đổi ngày hiệu lực ở đầu trang trước khi tính năng
   đó được phát hành.
 </p>
 
@@ -331,7 +366,7 @@
 
 <h1 style="font-size:22px;color:#085041;margin-bottom:6px">Privacy Policy</h1>
 <p class="meta">
-  <strong>Effective date:</strong> 29 September 2026<br>
+  <strong>Effective date:</strong> 4 October 2026<br>
   <strong>Developer:</strong> N.C.D Smart App<br>
   <strong>Package name:</strong> com.ncdsmartapp.plantcare<br>
   <strong>Contact:</strong> <a href="mailto:plantcare.vn.support@gmail.com">plantcare.vn.support@gmail.com</a>
@@ -356,6 +391,8 @@
     <tr><td>Name, email, phone number</td><td>No</td><td>The app has no sign-up feature</td></tr>
     <tr><td>Contacts, messages, call logs</td><td>No</td><td>—</td></tr>
     <tr><td>Purchase history</td><td>Yes</td><td>Confirming which plan you bought and when it expires</td></tr>
+    <tr><td>Advertising ID</td><td>Yes — Free plan only, collected by Google AdMob</td><td>Showing and measuring ads, ad fraud prevention</td></tr>
+    <tr><td>IP address, ad interactions, ad SDK diagnostics</td><td>Yes — Free plan only, collected by Google AdMob</td><td>Showing and measuring ads, estimating approximate region, fraud prevention</td></tr>
     <tr><td>Card or bank details</td><td>No</td><td>Handled entirely by Google Play</td></tr>
     <tr><td>Health information</td><td>No</td><td>—</td></tr>
   </tbody>
@@ -369,6 +406,15 @@
   cannot be reset by reinstalling; it changes only after a factory reset. Purchased plans can be
   restored on a new device with <strong>Restore purchases</strong>, because Google Play records them
   against your Google account.
+</p>
+<p>
+  <strong>About advertising.</strong> PlantCare shows <strong>Google AdMob</strong> ads to users on the
+  <strong>Free plan</strong> (a small banner, a full-screen ad after an identification result, and ads you
+  choose to watch to unlock a tool once). <strong>Basic and Pro plans show no ads.</strong> To show and
+  measure ads, Google's ad SDK may collect the device advertising ID, IP address (used to estimate
+  approximate region), ad interactions and technical diagnostics, encrypted in transit. We do
+  <strong>not</strong> send Google your photos, plant list, care journal or any garden data. How Google
+  uses data: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
 </p>
 
 <h2>2. Data stored only on your device</h2>
@@ -386,19 +432,22 @@
   <li><strong>Anthropic</strong> — AI model that analyses plant photos</li>
   <li><strong>RevenueCat</strong> — receives the hashed device identifier and purchase history to confirm your plan; never receives card details</li>
   <li><strong>Google Play</strong> — processes all subscription payments</li>
+  <li><strong>Google AdMob</strong> — advertising ID, IP address and ad interactions (Free plan only), to show and measure ads</li>
 </ul>
-<p>We do not sell your data, do not share it with advertisers, and do not use it for ad targeting.</p>
+<p>We do not sell your data. Apart from what Google AdMob collects to show ads on the Free plan, as described above, we do not share your data with any advertising company.</p>
 
 <h2>4. Permissions</h2>
 <p>
   Camera and photo access for plant identification, location for weather, notifications for care
-  reminders. Every permission can be declined; the app remains usable without any of them.
+  reminders, and the advertising ID permission (AD_ID) so Google AdMob can show ads on the Free plan.
+  Every permission can be declined or the advertising ID reset; the app remains usable without any of them.
 </p>
 
 <h2>5. Your rights</h2>
 <p>
   You may delete all local data from within the app (Profile → Delete all data), export a backup
-  file, revoke any permission in your phone settings, or uninstall the app. Anonymous counters tied
+  file, revoke any permission in your phone settings, reset or delete your advertising ID in your
+  phone's Google settings (upgrading to Basic or Pro removes ads), or uninstall the app. Anonymous counters tied
   to the device identifier (usage counts and gift credits received) remain on our servers after you
   clear data or uninstall, so free usage cannot be reset by reinstalling; they contain nothing that
   identifies you.
@@ -418,7 +467,7 @@
 
 <h2>8. Changes</h2>
 <p>
-  If we add features that affect data handling — such as cross-device sync or advertising — we will
+  If we add features that affect data handling — such as cross-device sync — we will
   update this page and change the effective date before releasing them.
 </p>
 
