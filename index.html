@@ -106,7 +106,8 @@
 <main>
 
 <p class="meta">
-  <strong>Có hiệu lực từ:</strong> 04/10/2026<br>
+  <strong>Có hiệu lực từ:</strong> 08/10/2026<br>
+  <strong>Nền tảng:</strong> Android (Google Play) · iPhone (App Store)<br>
   <strong>Nhà phát triển:</strong> N.C.D Smart App<br>
   <strong>Tên gói ứng dụng:</strong> com.ncdsmartapp.plantcare<br>
   <strong>Liên hệ:</strong> <a href="mailto:plantcare.vn.support@gmail.com">plantcare.vn.support@gmail.com</a>
@@ -157,8 +158,8 @@
       <td>Xác nhận gói bạn đã mua và thời hạn của gói</td>
     </tr>
     <tr>
-      <td>Mã quảng cáo của thiết bị (Advertising ID)</td>
-      <td>Có — chỉ với gói Miễn phí, do Google AdMob thu thập</td>
+      <td>Mã quảng cáo của thiết bị (Advertising ID trên Android · IDFA trên iPhone)</td>
+      <td>Có — chỉ với gói Miễn phí, do Google AdMob thu thập. Trên iPhone chỉ khi bạn bấm <strong>Cho phép</strong> ở hộp hỏi theo dõi</td>
       <td>Hiển thị và đo lường quảng cáo, chống gian lận quảng cáo</td>
     </tr>
     <tr>
@@ -169,7 +170,7 @@
     <tr>
       <td>Thông tin thẻ, tài khoản ngân hàng</td>
       <td>Không</td>
-      <td>Mọi giao dịch do Google Play xử lý, ứng dụng không nhìn thấy thẻ của bạn</td>
+      <td>Mọi giao dịch do Google Play (Android) hoặc App Store (iPhone) xử lý, ứng dụng không nhìn thấy thẻ của bạn</td>
     </tr>
     <tr>
       <td>Thông tin sức khoẻ</td>
@@ -189,7 +190,7 @@
 
 <h3>Về mã định danh</h3>
 <p>
-  Khi mở ứng dụng lần đầu, ứng dụng tạo một mã định danh bằng cách <strong>băm một chiều</strong>
+  <strong>Trên Android</strong>, khi mở ứng dụng lần đầu, ứng dụng tạo một mã định danh bằng cách <strong>băm một chiều</strong>
   mã Android ID của máy (mã Android cấp riêng cho từng ứng dụng trên từng máy) cùng một chuỗi cố định
   của PlantCare, ví dụ <em>pc-a-3fh8k2qm9x1w7tz4r6pd</em>. Băm một chiều nghĩa là từ mã này không thể
   tính ngược ra Android ID. Mã này không phải mã quảng cáo của Android, không chứa tên, email hay số
@@ -200,6 +201,13 @@
   nên số lượt đã dùng trong tháng không bị đặt lại; mã chỉ đổi khi máy được khôi phục cài đặt gốc.
   Gói đã mua vẫn lấy lại được trên máy mới bằng nút <strong>Khôi phục giao dịch</strong>, vì Google Play
   ghi nhận giao dịch theo tài khoản Google của bạn.
+</p>
+<p>
+  <strong>Trên iPhone</strong>, khi mở ứng dụng lần đầu, ứng dụng tạo một <strong>mã ngẫu nhiên</strong>, ví dụ
+  <em>pc-i-7k2m9x1w3fh8tz4r6pd</em>, và cất trong Chuỗi khoá (Keychain) của iPhone. Mã này không phải mã quảng
+  cáo IDFA, không lấy từ phần cứng, không chứa tên, email hay số điện thoại. Mã được dùng vào đúng bốn việc như
+  trên Android và cũng <strong>giữ nguyên khi bạn gỡ rồi cài lại ứng dụng</strong>. Gói đã mua trên App Store lấy
+  lại được bằng nút <strong>Khôi phục giao dịch</strong>, vì App Store ghi nhận giao dịch theo Apple ID của bạn.
 </p>
 
 <h3>Về ảnh</h3>
@@ -224,6 +232,13 @@
   hoá khi truyền đi. Chúng tôi <strong>không</strong> gửi cho Google ảnh, danh sách cây, nhật ký chăm sóc
   hay bất kỳ dữ liệu nào trong vườn của bạn. Cách Google sử dụng dữ liệu:
   <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+</p>
+<p>
+  <strong>Trên iPhone</strong>, trước khi tải quảng cáo lần đầu, ứng dụng hiện hộp hỏi của Apple
+  <em>"Cho phép PlantCare theo dõi hoạt động của bạn…"</em> (App Tracking Transparency). Nếu bạn chọn
+  <strong>Yêu cầu ứng dụng không theo dõi</strong>, Google AdMob không đọc được mã IDFA và chỉ hiển thị quảng cáo
+  không cá nhân hoá; mọi tính năng của ứng dụng vẫn dùng bình thường. Bạn đổi lựa chọn bất cứ lúc nào trong
+  Cài đặt → Quyền riêng tư &amp; Bảo mật → Theo dõi.
 </p>
 
 <h2>2. Dữ liệu nằm trên máy của bạn</h2>
@@ -273,6 +288,11 @@
       <td>Xử lý mọi giao dịch mua gói; chúng tôi không nhìn thấy thẻ của bạn</td>
     </tr>
     <tr>
+      <td>Apple App Store</td>
+      <td>Thông tin thanh toán (trên iPhone)</td>
+      <td>Xử lý mọi giao dịch mua gói trên iPhone; chúng tôi không nhìn thấy thẻ của bạn</td>
+    </tr>
+    <tr>
       <td>Google AdMob</td>
       <td>Mã quảng cáo của thiết bị, địa chỉ IP, tương tác với quảng cáo (chỉ gói Miễn phí)</td>
       <td>Hiển thị và đo lường quảng cáo cho gói Miễn phí</td>
@@ -312,9 +332,14 @@
       <td>Được — chỉ mất lời nhắc</td>
     </tr>
     <tr>
-      <td>Mã quảng cáo (AD_ID)</td>
+      <td>Mã quảng cáo (AD_ID) — Android</td>
       <td>Cho Google AdMob đọc mã quảng cáo để hiển thị quảng cáo gói Miễn phí</td>
       <td>Được — đặt lại hoặc xoá mã trong Cài đặt → Google → Quảng cáo</td>
+    </tr>
+    <tr>
+      <td>Cho phép theo dõi (App Tracking Transparency) — iPhone</td>
+      <td>Cho Google AdMob đọc mã IDFA để quảng cáo gói Miễn phí phù hợp hơn</td>
+      <td>Được — quảng cáo vẫn hiện nhưng không cá nhân hoá</td>
     </tr>
   </tbody>
 </table>
@@ -326,7 +351,8 @@
   <li><strong>Sao lưu:</strong> xuất toàn bộ vườn cây ra một tệp để tự giữ.</li>
   <li><strong>Rút quyền:</strong> tắt quyền vị trí hoặc thông báo bất cứ lúc nào trong phần
       Cài đặt của điện thoại.</li>
-  <li><strong>Mã quảng cáo:</strong> đặt lại hoặc xoá trong Cài đặt → Google → Quảng cáo của điện thoại.
+  <li><strong>Mã quảng cáo:</strong> trên Android, đặt lại hoặc xoá trong Cài đặt → Google → Quảng cáo của điện thoại;
+      trên iPhone, tắt trong Cài đặt → Quyền riêng tư &amp; Bảo mật → Theo dõi.
       Nâng cấp lên gói Basic hoặc Pro thì ứng dụng không hiển thị quảng cáo.</li>
   <li><strong>Gỡ ứng dụng:</strong> mọi dữ liệu trên máy biến mất cùng lúc.</li>
 </ul>
@@ -362,11 +388,19 @@
   <a href="mailto:plantcare.vn.support@gmail.com">plantcare.vn.support@gmail.com</a>.
 </p>
 
+<h2>10. Điều khoản sử dụng gói thuê bao</h2>
+<p>
+  Gói Basic và Pro là gói thuê bao tự gia hạn. Trên iPhone, việc mua và sử dụng gói tuân theo
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Điều khoản sử dụng tiêu chuẩn của Apple (EULA)</a>; trên Android, tuân theo
+  điều khoản của Google Play. Bạn huỷ gói bất cứ lúc nào trong phần quản lý gói của App Store hoặc Google Play.
+</p>
+
 <hr class="sep">
 
 <h1 style="font-size:22px;color:#085041;margin-bottom:6px">Privacy Policy</h1>
 <p class="meta">
-  <strong>Effective date:</strong> 4 October 2026<br>
+  <strong>Effective date:</strong> 8 October 2026<br>
+  <strong>Platforms:</strong> Android (Google Play) · iPhone (App Store)<br>
   <strong>Developer:</strong> N.C.D Smart App<br>
   <strong>Package name:</strong> com.ncdsmartapp.plantcare<br>
   <strong>Contact:</strong> <a href="mailto:plantcare.vn.support@gmail.com">plantcare.vn.support@gmail.com</a>
@@ -391,14 +425,14 @@
     <tr><td>Name, email, phone number</td><td>No</td><td>The app has no sign-up feature</td></tr>
     <tr><td>Contacts, messages, call logs</td><td>No</td><td>—</td></tr>
     <tr><td>Purchase history</td><td>Yes</td><td>Confirming which plan you bought and when it expires</td></tr>
-    <tr><td>Advertising ID</td><td>Yes — Free plan only, collected by Google AdMob</td><td>Showing and measuring ads, ad fraud prevention</td></tr>
+    <tr><td>Advertising ID (Android) / IDFA (iPhone)</td><td>Yes — Free plan only, collected by Google AdMob; on iPhone only if you tap <strong>Allow</strong> in the tracking prompt</td><td>Showing and measuring ads, ad fraud prevention</td></tr>
     <tr><td>IP address, ad interactions, ad SDK diagnostics</td><td>Yes — Free plan only, collected by Google AdMob</td><td>Showing and measuring ads, estimating approximate region, fraud prevention</td></tr>
-    <tr><td>Card or bank details</td><td>No</td><td>Handled entirely by Google Play</td></tr>
+    <tr><td>Card or bank details</td><td>No</td><td>Handled entirely by Google Play (Android) or the App Store (iPhone)</td></tr>
     <tr><td>Health information</td><td>No</td><td>—</td></tr>
   </tbody>
 </table>
 <p>
-  <strong>About the device identifier.</strong> On first launch the app creates an identifier by
+  <strong>About the device identifier.</strong> On Android, on first launch the app creates an identifier by
   one-way hashing your device's Android ID (an ID Android assigns separately to each app on each
   device) together with a fixed PlantCare value, e.g. <em>pc-a-3fh8k2qm9x1w7tz4r6pd</em>. The Android
   ID cannot be recovered from it. It is not the Android advertising ID and contains no name, email or
@@ -408,6 +442,13 @@
   against your Google account.
 </p>
 <p>
+  On iPhone, on first launch the app creates a <strong>random</strong> identifier, e.g.
+  <em>pc-i-7k2m9x1w3fh8tz4r6pd</em>, stored in the iPhone Keychain. It is not the IDFA, is not derived from
+  hardware, and contains no name, email or phone number. It serves the same four purposes and also
+  <strong>survives reinstalling the app</strong>. Plans bought on the App Store can be restored with
+  <strong>Restore purchases</strong>, because the App Store records them against your Apple ID.
+</p>
+<p>
   <strong>About advertising.</strong> PlantCare shows <strong>Google AdMob</strong> ads to users on the
   <strong>Free plan</strong> (a small banner, a full-screen ad after an identification result, and ads you
   choose to watch to unlock a tool once). <strong>Basic and Pro plans show no ads.</strong> To show and
@@ -415,6 +456,12 @@
   approximate region), ad interactions and technical diagnostics, encrypted in transit. We do
   <strong>not</strong> send Google your photos, plant list, care journal or any garden data. How Google
   uses data: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+</p>
+<p>
+  On iPhone, before loading ads for the first time the app shows Apple's App Tracking Transparency prompt.
+  If you choose <strong>Ask App Not to Track</strong>, Google AdMob cannot read the IDFA and shows only
+  non-personalised ads; every app feature keeps working. You can change this at any time in
+  Settings → Privacy &amp; Security → Tracking.
 </p>
 
 <h2>2. Data stored only on your device</h2>
@@ -431,7 +478,8 @@
   <li><strong>Supabase</strong> — our own backend; relays photos and stores anonymous counters</li>
   <li><strong>Anthropic</strong> — AI model that analyses plant photos</li>
   <li><strong>RevenueCat</strong> — receives the hashed device identifier and purchase history to confirm your plan; never receives card details</li>
-  <li><strong>Google Play</strong> — processes all subscription payments</li>
+  <li><strong>Google Play</strong> — processes all subscription payments on Android</li>
+  <li><strong>Apple App Store</strong> — processes all subscription payments on iPhone</li>
   <li><strong>Google AdMob</strong> — advertising ID, IP address and ad interactions (Free plan only), to show and measure ads</li>
 </ul>
 <p>We do not sell your data. Apart from what Google AdMob collects to show ads on the Free plan, as described above, we do not share your data with any advertising company.</p>
@@ -439,7 +487,8 @@
 <h2>4. Permissions</h2>
 <p>
   Camera and photo access for plant identification, location for weather, notifications for care
-  reminders, and the advertising ID permission (AD_ID) so Google AdMob can show ads on the Free plan.
+  reminders, the advertising ID permission (AD_ID, Android) and the App Tracking Transparency prompt (iPhone)
+  so Google AdMob can show ads on the Free plan.
   Every permission can be declined or the advertising ID reset; the app remains usable without any of them.
 </p>
 
@@ -473,6 +522,13 @@
 
 <h2>9. Contact</h2>
 <p><a href="mailto:plantcare.vn.support@gmail.com">plantcare.vn.support@gmail.com</a></p>
+
+<h2>10. Subscription terms of use</h2>
+<p>
+  Basic and Pro are auto-renewable subscriptions. On iPhone, purchases and use are governed by
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard Terms of Use (EULA)</a>; on Android, by Google Play's terms.
+  You can cancel at any time in the subscription settings of the App Store or Google Play.
+</p>
 
 </main>
 
